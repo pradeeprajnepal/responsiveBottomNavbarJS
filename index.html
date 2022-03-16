@@ -1,186 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4cd3f9097c.js" crossorigin="anonymous"></script>
-    <title>Dropdown Menu</title>
-</head>
-<body>
-    <nav>
-        <div class="menu-btn">
-            Dropdown <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="wrapper">
-            <ul class="menu-drop">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-home"></span>
-                        </div>
-                        Home
-                    </a>
-                </li>
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-                
-                <li class="setting-btn">
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-gear"></span>
-                        </div>
-                        Settings <i class="fa-solid fa-caret-right"></i>
-                    </a>
-                </li>
-                
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-                <li class="help-btn">
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-circle-question"></span>
-                        </div>
-                        Help & Support <i class="fa-solid fa-caret-right"></i>
-                    </a>
-                </li>
-                
+        <title>Responsive bottom navigation</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Pradeep Raj Nepal</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
 
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-user"></span>
-                        </div>
-                        About Us
-                    </a>
-                </li>
-                
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active__link">
+                                <i class='bx bx-home-alt-2 nav__icon' ></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                        </li>
 
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-message"></span>
-                        </div>
-                        Feedback
-                    </a>
-                </li>
-                
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user nav__icon' ></i>
+                                <span class="nav__name">About</span>
+                            </a>
+                        </li>
 
-            </ul>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-cog nav__icon' ></i>
+                                <span class="nav__name">Skills</span>
+                            </a>
+                        </li>
 
-            <!-- Settings & Privacy Menu - Items -->
-            <ul class="setting-drop">
-                <li class="arrow back-setting-btn"><span class="fas fa-arrow-left"></span>
-                Settings & Privacy</li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class='bx bx-briefcase nav__icon'></i>
+                                <span class="nav__name">Portfolio</span>
+                            </a>
+                        </li>
 
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-user"></span>
-                        </div>
-                        Personal Info
-                    </a>
-                </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-message-square nav__icon'></i>
+                                <span class="nav__name">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-                
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-lock"></span>
-                        </div>
-                        Password
-                    </a>
-                </li>
-                
+                <img src="assets/img/portrait.png" alt="" class="nav__img">
+            </nav>
+        </header>
 
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-address-book"></span>
-                        </div>
-                        Activity log
-                    </a>
-                </li>
-                
+        <main>
+            <!--=============== HOME ===============-->
+            <section class="container section section__height" id="home">
+                <h2 class="section__title">Home</h2>
+            </section>
 
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-globe-asia"></span>
-                        </div>
-                        Languages
-                    </a>
-                </li>
-                
+            <!--=============== ABOUT ===============-->
+            <section class="container section section__height" id="about">
+                <h2 class="section__title">About</h2>
+            </section>
 
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-sign-out-alt"></span>
-                        </div>
-                        Log Out
-                    </a>
-                </li>
-                
+            <!--=============== SKILLS ===============-->
+            <section class="container section section__height" id="skills">
+                <h2 class="section__title">Skills</h2>
+            </section>
 
-            </ul>
+            <!--=============== PORTFOLIO ===============-->
+            <section class="container section section__height" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+            </section>
 
-            <!-- Help & Support -->
-
-            <ul class="help-drop">
-                <li class="arrow back-help-btn"><span class="fas fa-arrow-left"></span>
-                Help & Support</li>
-
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-question-circle"></span>
-                        </div>
-                        Help Centre
-                    </a>
-                </li>
-
-                
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-envelope"></span>
-                        </div>
-                        Support Inbox
-                    </a>
-                </li>
-                
-
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-comment-alt"></span>
-                        </div>
-                        Send feedback
-                    </a>
-                </li>
-                
-
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-exclamation-circle"></span>
-                        </div>
-                        Report Problem
-                    </a>
-                </li>
-
-                
-
-            </ul>
-
-
-
-            </div>
-        </div>
-    </nav>
-
-    <script src="script.js"></script>
-    
-</body>
+            <!--=============== CONTACTME ===============-->
+            <section class="container section section__height" id="contact">
+                <h2 class="section__title">Contact</h2>
+            </section>
+        </main>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
