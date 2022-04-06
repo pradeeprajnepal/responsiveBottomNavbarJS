@@ -1,1 +1,4 @@
-LIVE: [Responsive Bottom Navbar](https://pradeeprajnepal.github.io/responsiveBottomNavbarJS);
+# Responsive Bottom Navbar
+
+> View the project [HERE](https://pradeeprajnepal.github.io/responsiveBottomNavbarJS).
+
